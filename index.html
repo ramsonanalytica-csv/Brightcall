@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d19">
+  <title>BrightCall — AI Receptionist</title>
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#">BrightCall</a>
+    <span>AI RECEPTIONIST DEMO</span>
+  </header>
+
+  <main class="hero">
+    <section class="hero-copy">
+      <p>YOUR BUSINESS, ALWAYS AVAILABLE</p>
+      <h1>Every call matters.<br><span>Never miss one.</span></h1>
+
+      <p>
+        Meet Alex, your AI receptionist.
+        Talk naturally and experience a smarter way to handle enquiries.
+      </p>
+
+      <button id="open-call">Talk to our AI receptionist</button>
+      <p id="demo-status" aria-live="polite">
+        Ready when you are.
+      </p>
+    </section>
+
+    <section class="demo-panel" id="demo">
+      <div class="phone">
+        <div class="phone-island"></div>
+
+        <div class="phone-content">
+          <p>AI RECEPTIONIST</p>
+          <div class="avatar">A</div>
+          <h2>Alex Morgan</h2>
+          <p>BrightCall Receptionist</p>
+          <p>Start a conversation below</p>
+
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="complaint-section" id="complaint">
+  <div class="complaint-heading">
+    <p>CUSTOMER SUPPORT</p>
+    <h2>We're here to listen.</h2>
+    <p>
+      Have an issue or concern? Tell us what happened
+      and our team will look into it.
+    </p>
+  </div>
+
+  <form id="complaint-form">
+    <label for="complaint-name">Full name</label>
+    <input
+      type="text"
+      id="complaint-name"
+      name="name"
+      placeholder="Enter your full name"
+      required
+    > <br>
+
+    <label for="complaint-email">Email address</label>
+    <input
+      type="email"
+      id="complaint-email"
+      name="email"
+      placeholder="Enter your email"
+      required
+    > <br>
+
+    <label for="complaint-phone">Phone number</label>
+    <input
+      type="tel"
+      id="complaint-phone"
+      name="phone"
+      placeholder="Enter your phone number"
+      required
+    > <br>
+
+    <label for="complaint-category">Complaint category</label>
+    <select id="complaint-category" name="category" required>
+      <option value="">Select a category</option>
+      <option value="Service">Service issue</option>
+      <option value="Staff">Staff complaint</option>
+      <option value="Payment">Payment or billing</option>
+      <option value="Technical">Technical issue</option>
+      <option value="Other">Other</option>
+    </select> <br>
+
+    <label for="complaint-description">Describe your complaint</label>
+    <textarea
+      id="complaint-description"
+      name="description"
+      rows="5"
+      placeholder="Please explain what happened..."
+      required
+    ></textarea> <br>
+
+    <button type="submit">Submit complaint</button> <br>
+
+    <p id="complaint-status" aria-live="polite"></p>
+  </form>
+</section>
+
+
+<section class="appointment-section" id="appointment">
+  <div class="appointment-heading">
+    <p>BOOK AN APPOINTMENT</p>
+    <h2>Let's schedule a conversation.</h2>
+    <p>Tell us when you'd like to meet and what service you need.</p>
+  </div>
+
+  <form id="appointment-form">
+    <label for="appointment-name">Full name</label>
+    <input type="text" id="appointment-name" name="name"
+      placeholder="Enter your full name" required>
+
+    <label for="appointment-email">Email address</label>
+    <input type="email" id="appointment-email" name="email"
+      placeholder="Enter your email" required>
+
+    <label for="appointment-phone">Phone number</label>
+    <input type="tel" id="appointment-phone" name="phone"
+      placeholder="Enter your phone number" required>
+
+    <label for="appointment-service">Service</label>
+    <select id="appointment-service" name="service" required>
+      <option value="">Select a service</option>
+      <option value="Consultation">Consultation</option>
+      <option value="Product Enquiry">Product Enquiry</option>
+      <option value="Business Support">Business Support</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="appointment-date">Preferred date</label>
+    <input type="date" id="appointment-date"
+      name="appointment_date" required>
+
+    <label for="appointment-time">Preferred time</label>
+    <input type="time" id="appointment-time"
+      name="appointment_time" required>
+
+    <label for="appointment-notes">Additional notes</label>
+    <textarea id="appointment-notes" name="notes"
+      rows="4" placeholder="Anything else we should know?"></textarea>
+
+    <button type="submit">Request appointment</button>
+    <p id="appointment-status" aria-live="polite"></p>
+  </form>
+</section>
+
+
+<footer>BrightCall AI · Smarter conversations. Better service.</footer>
+  
+  <script
+  src="https://cloud.livekit.io/embed-popup.js"
+  data-lk-agent="CA_gia3b3dCc3gX"
+  data-lk-color="#002CF2"
+></script>
+
+  <script src="main.js"></script>
+</body>
+</html>

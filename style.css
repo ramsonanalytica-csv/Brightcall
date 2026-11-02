@@ -1,0 +1,322 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #f5f7ff;
+  background:
+    radial-gradient(ellipse at 80% 30%, #29376c, transparent 40%),
+    #080d19;
+}
+
+.navbar, footer {
+  padding: 24px 6%;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.navbar span {
+  color: #aab5ce;
+  font-size: 11px;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+}
+
+.hero-copy h1 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.hero-copy h1 span {
+  color: #8e9cff;
+}
+
+.hero-copy p {
+  color: #aab5ce;
+  line-height: 1.8;
+}
+
+button {
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 12px;
+  background: #6879f4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.demo-panel {
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  width: 300px;
+  padding: 12px;
+  border: 5px solid #30394a;
+  border-radius: 38px;
+  background: #101522;
+  box-shadow: 0 25px 70px #0007;
+}
+
+.phone-island {
+  width: 80px;
+  height: 18px;
+  margin: 0 auto -5px;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  background: #03050a;
+}
+
+.phone-content {
+  min-height: 450px;
+  padding: 30px 12px;
+  border-radius: 27px;
+  background: linear-gradient(160deg, #252e4c, #111522);
+  text-align: center;
+}
+
+.phone-content > p {
+  color: #aab5ce;
+  font-size: 12px;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 30px auto 15px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #9aa5ff, #495dd4);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.phone-content h2 {
+  margin-bottom: 5px;
+}
+
+vapi-widget {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto 0;
+}
+
+footer {
+  color: #929eb4;
+  border-top: 1px solid #ffffff15;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 35px 22px;
+  }
+
+  .phone {
+    width: min(300px, 100%);
+  }
+}
+
+/* COMPLAINT SECTION */
+
+.complaint-section {
+  max-width: 750px;
+  margin: 40px auto 80px;
+  padding: 45px 30px;
+  border: 1px solid #ffffff18;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #151e35, #0e1423);
+  box-shadow: 0 20px 60px #0005;
+}
+
+.complaint-heading {
+  margin-bottom: 30px;
+}
+
+.complaint-heading > p:first-child {
+  color: #8e9cff;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.complaint-heading h2 {
+  font-size: 32px;
+  margin: 12px 0;
+}
+
+.complaint-heading p {
+  color: #aab5ce;
+  line-height: 1.7;
+}
+
+#complaint-form {
+  display: grid;
+  gap: 12px;
+}
+
+#complaint-form label {
+  color: #dce2f5;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+#complaint-form input,
+#complaint-form select,
+#complaint-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ffffff20;
+  border-radius: 10px;
+  outline: none;
+  background: #080d19;
+  color: white;
+  font: inherit;
+}
+
+#complaint-form input:focus,
+#complaint-form select:focus,
+#complaint-form textarea:focus {
+  border-color: #8e9cff;
+  box-shadow: 0 0 0 3px #8e9cff20;
+}
+
+#complaint-form textarea {
+  resize: vertical;
+}
+
+#complaint-form button {
+  margin-top: 15px;
+}
+
+#complaint-status {
+  color: #aab5ce;
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .complaint-section {
+    margin: 20px 16px 60px;
+    padding: 30px 20px;
+  }
+
+  .complaint-heading h2 {
+    font-size: 27px;
+  }
+}
+
+
+/* APPOINTMENT SECTION */
+.appointment-section {
+  max-width: 750px;
+  margin: 40px auto 80px;
+  padding: 45px 30px;
+  border: 1px solid #ffffff18;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #151e35, #0e1423);
+  box-shadow: 0 20px 60px #0005;
+}
+
+.appointment-heading {
+  margin-bottom: 30px;
+}
+
+.appointment-heading > p:first-child {
+  color: #8e9cff;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.appointment-heading h2 {
+  font-size: 32px;
+  margin: 12px 0;
+}
+
+.appointment-heading p {
+  color: #aab5ce;
+  line-height: 1.7;
+}
+
+#appointment-form {
+  display: grid;
+  gap: 12px;
+}
+
+#appointment-form label {
+  color: #dce2f5;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+#appointment-form input,
+#appointment-form select,
+#appointment-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ffffff20;
+  border-radius: 10px;
+  outline: none;
+  background: #080d19;
+  color: white;
+  font: inherit;
+}
+
+#appointment-form input:focus,
+#appointment-form select:focus,
+#appointment-form textarea:focus {
+  border-color: #8e9cff;
+  box-shadow: 0 0 0 3px #8e9cff20;
+}
+
+#appointment-form textarea {
+  resize: vertical;
+}
+
+#appointment-form button {
+  margin-top: 15px;
+}
+
+#appointment-status {
+  color: #aab5ce;
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .appointment-section {
+    margin: 20px 16px 60px;
+    padding: 30px 20px;
+  }
+
+  .appointment-heading h2 {
+    font-size: 27px;
+  }
+}
